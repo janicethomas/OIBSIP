@@ -1,0 +1,255 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container-fluid {
+    padding: 0px;
+    min-height: 90vh;
+}
+
+/* .container {
+    padding: 0px;
+    height: 100vh;
+} */
+
+.max-height {
+    height: 100vh;
+}
+
+#wrapper {
+    padding: 90px 15px;
+    /* padding: 0px; */
+}
+
+#about {
+    height: 100vh;
+}
+
+.navbar-expand-lg .navbar-nav.side-nav {
+    flex-direction: column;
+}
+
+.header-top {
+    box-shadow: 0 3px 5px rgba(0, 0, 0, .1)
+}
+
+.leftmenutrigger,
+.navbar-nav li a .shortmenu {
+    display: none
+}
+
+
+@media(min-width:992px) {
+    #wrapper {
+        /* padding: 90px 15px 15px 75px; */
+        padding: 0px;
+    }
+
+    .navbar-nav.side-nav:hover {
+        left: 0;
+    }
+
+    .side-nav li a {
+        padding: 20px
+    }
+
+    .navbar-nav li a .shortmenu {
+        float: right;
+        display: block;
+        opacity: 1
+    }
+
+    .navbar-nav.side-nav:hover li a .shortmenu {
+        opacity: 0
+    }
+
+    .navbar-nav.side-nav {
+        /* background: #585f66; */
+        background: rgb(92, 84, 112);
+        box-shadow: 2px 1px 2px rgba(0, 0, 0, .1);
+        position: fixed;
+        top: 56px;
+        flex-direction: column !important;
+        left: -140px;
+        width: 200px;
+        overflow-y: auto;
+        bottom: 0;
+        overflow-x: hidden;
+        padding-bottom: 40px
+    }
+}
+
+.animate {
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    -ms-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out
+}
+
+.navbar-nav li a svg {
+    font-size: 25px;
+    float: left;
+    margin: 0 10px 0 5px;
+}
+
+.side-nav li {
+    border-bottom: 1px solid #50575d;
+}
+
+.icon {
+    font-size: 96px;
+}
+
+.gr-1 {
+    background: linear-gradient(170deg, #E19898 0%, #4D3C77 100%);
+}
+.gr-2 {
+    background: linear-gradient(170deg, #9288F8 0%, 
+    #322653 100%);
+}
+.gr-3 {
+    background: linear-gradient(170deg, #c86dd7 0%, #3023ae 100%);
+}
+
+.skills-card {
+    width: 18rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .27);
+   background-color: rgb(250, 240, 230) !important;
+}
+
+.skills-card:hover {
+    background-color: rgb(53, 47, 68) !important;
+    box-shadow: 0 0 21px rgba(0, 0, 0, .27);
+    transform:scale(1.15);
+    transition: 0.25s;
+}
+
+.skills-card:hover h3{
+    color: rgb(250, 240, 230) !important;
+}
+
+.skills-card:hover .icon{
+    color: rgb(181, 147, 113) !important;
+}
+
+.align-middle {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.column:hover {
+    padding-left: 0;
+}
+.column:hover .card .txt {
+    margin-left: 1rem;
+}
+.column:hover .card .txt h1, .column:hover .card .txt p {
+    color: rgb(250, 240, 230);
+    opacity: 1;
+}
+
+.column:hover a:after {
+    width: 10%;
+}
+#projects .card {
+    min-height: 220px;
+    max-width: 300px;
+    margin: 0;
+    padding: 2rem 2rem;
+    border: none;
+    /* border-radius: 0; */
+    /* color: rgba(0, 0, 0, 1); */
+    letter-spacing: 0.05rem;
+    box-shadow: 0 0 21px rgba(0, 0, 0, .27);
+}
+.card .txt {
+    margin-left: -3rem;
+    z-index: 1;
+}
+#projects .card .txt h1 {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+.card .txt p {
+    letter-spacing: 0rem;
+    margin-top: 33px;
+    opacity: 0;
+    color: rgb(250, 240, 230);
+}
+
+#projects .card .ico-card {
+    position: absolute;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+#projects .card span {
+    position: relative;
+    right: -45%;
+    top: 60%;
+    font-size: 6rem;
+    line-height: 0;
+    opacity: 0.2;
+    /* color: rgba(255, 255, 255, 1); */
+    z-index: 0;
+}
+
+.form-control {
+    border-radius: 20px;
+    margin-top: 2px;
+}
+
+#about h1.text-nowrap{
+    font-style: italic;
+}
+
+#contact {
+    background-image: linear-gradient(180deg, rgb(255, 255, 255), rgb(207, 201, 222));
+}
+
+#contact img {
+    opacity: 80%;
+    filter: hue-rotate(70deg) sepia(0.8) opacity(0.7);
+}
+
+#about {
+    background-image: linear-gradient(165deg, black, rgb(65, 57, 82));
+}
+
+#about img{
+    /* filter: hue-rotate(0deg); */
+    filter: sepia(0.4) hue-rotate(270deg);
+}
+
+#about h1{
+    color: rgb(185, 180, 199);
+}
+
+#about h3{
+    color:rgb(250, 240, 230)
+}
+
+h1, h3{
+    color: rgb(53, 47, 68)  ;
+}
+
+.btn {
+    background-color: rgb(53, 47, 68);
+}
+
+.btn:hover {
+    background-color: rgb(92, 84, 112);
+}
+
+#skills .icon {
+    color: rgb(92, 84, 112);
+}
+
+p {
+    color:rgb(141, 137, 151)
+}

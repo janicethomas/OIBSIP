@@ -1,0 +1,56 @@
+
+.min-height{
+    min-height: 100vh;
+}
+
+.bg-red{
+    background-color: red;
+}
+
+.margin-auto{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.flex{
+    display: flex;
+}
+
+.items-center{
+    align-items: center;
+}
+
+.justify-between{
+    justify-content:space-between;
+}
+
+.justify-center{
+    justify-content:center;
+}
+
+.margin1{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.padding2{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.btn{
+    padding: 5px 12px;
+    border: none;
+    color:white;
+    background-color: rgb(66, 66, 147);
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.overflow-hidden{
+    overflow: hidden;
+}
+
+.text-center{
+    text-align: center;
+}

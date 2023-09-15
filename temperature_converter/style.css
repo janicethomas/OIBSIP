@@ -1,0 +1,43 @@
+.body {
+    background-color:azure ;
+    background-image: linear-gradient(125deg, rgb(187, 192, 222) , rgb(53, 59, 134)); 
+}
+
+
+.container {
+    min-height: 60%;
+    min-width: 40%;
+    background-color: rgb(179, 179, 179);
+    border-radius: 20px;
+    box-shadow: 2px 2px rgb(75, 75, 75);
+}
+
+.box {
+    height:80%;
+    width: 80%;
+    background-color: rgb(219, 219, 219);
+    border-radius: 20px;
+    box-shadow: 2px 2px rgb(75, 75, 75);  
+}
+
+.centered {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+#btn {
+    border: 1.5px solid rgb(53, 53, 53);
+    border-radius: 10px;
+    background-color: rgb(219, 219, 219);
+    color:  rgb(53, 53, 53);
+    padding: 5px;
+}
+
+#btn:hover {
+    border: none;
+    background-color: rgb(53, 53, 53);
+    color:  white;
+}
